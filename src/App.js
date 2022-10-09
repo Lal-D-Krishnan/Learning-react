@@ -1,10 +1,14 @@
 // learning useEffect from ben awad - React hook tutorial
-import React,{ useState} from 'react'
+import React,{ useEffect, useState} from 'react'
 import { useForm } from './useForm'
 
 
 const App = () => {
   const [values, setValues ] = useForm({email:'', password: ''});
+
+  useEffect(()=>{
+    console.log('render');
+  })
 
   return (
       <div>
@@ -14,6 +18,7 @@ const App = () => {
 
       </div>
   );
+
 }
 
 export default App;
