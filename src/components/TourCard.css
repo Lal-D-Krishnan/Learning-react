@@ -1,0 +1,13 @@
+.box1{
+    /* border-radius: 20%; */
+    border: 3px solid brown;
+    background-color: 'yellow';
+    border-bottom-right-radius: 100%;
+}
+
+.textbox{
+
+    border-bottom-left-radius: 40%;
+    background-color: blue;
+   
+}
